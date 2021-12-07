@@ -1,5 +1,5 @@
 import Presentation from "./Presentation";
-import {Grid} from "@mui/material";
+import {Button, Grid} from "@mui/material";
 
 function Header(){
     return (
@@ -10,8 +10,20 @@ function Header(){
                         <Presentation />
                     </Grid>
                 </Grid>
+                <Grid container justifyContent={'center'}>
+                    <Grid item xs={10} sm={6}>
+                        <Button className={'btn-cv'}
+                                fullWidth={true}
+                            // color={"primary"}
+                                variant={'contained'}
+                                href={'/CosimoRussoCV.pdf'}
+                                target={'_blank'}
+                        >
+                            Download my CV
+                        </Button>
+                    </Grid>
+                </Grid>
             </div>
-
         </header>
     )
 }
