@@ -1,0 +1,63 @@
+h1{
+  font-family: MontSerrat,Tahoma,Arial,sans-serif;
+  font-size: 1.8em;
+  line-height: 1.7em;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+p{
+  font-size: 1.05em;
+  line-height: 1.95em;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+header {
+  background: #2f2f2f;
+  text-align: center;
+
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  h1{
+    color: #cacaca;
+  }
+
+  p{
+    color: #8a8a8a;
+  }
+}
+
+.project-box{
+  width: 100%;
+  height: 100%;
+  img{
+    width: 100%;
+    height: 260px;
+  }
+  .container{
+    position: relative;
+    text-align: center;
+    .centered{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.52);
+      width: 100%;
+      font-size: 1.4em;
+      line-height: 3em;
+    }
+  }
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
