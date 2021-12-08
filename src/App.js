@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Projects from "./components/Projects";
 
 import {createTheme, ThemeProvider} from '@mui/material/styles';
+import SocialNetworks from "./sections/SocialNetworks";
 
 const theme = createTheme({
     status: {
@@ -26,6 +27,7 @@ function App() {
             <ThemeProvider theme={theme}>
                 <Header />
                 <Projects />
+                <SocialNetworks />
             </ThemeProvider>
 
         </div>

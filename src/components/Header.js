@@ -1,6 +1,6 @@
 import Presentation from "./Presentation";
 import {Button, Grid} from "@mui/material";
-import SocialLinks from "./SocialLinks";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 function Header(){
     return (
@@ -23,13 +23,12 @@ function Header(){
                             Download my CV
                         </Button>
                     </Grid>
-                </Grid>
-
-                <Grid container justifyContent={'center'}>
-                    <Grid item xs={10} sm={6}>
-                        <SocialLinks />
+                    <Grid item xs={12} style={{marginTop: '20px'}}>
+                        <p style={{margin: 0}}>Scroll for more</p>
+                        <KeyboardArrowDownIcon  color={'primary'} />
                     </Grid>
                 </Grid>
+
             </div>
         </header>
     )

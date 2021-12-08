@@ -1,5 +1,6 @@
 $textGrey: #8a8a8a;
 $titleGrey: #cacaca;
+$backgroundGrey: #2f2f2f;
 
 h1{
   font-family: MontSerrat,Tahoma,Arial,sans-serif;
@@ -16,7 +17,7 @@ p{
 }
 
 header {
-  background: #2f2f2f;
+  background: $backgroundGrey;
   text-align: center;
 
   top:0;
@@ -70,5 +71,15 @@ a.btn-cv{
   &:hover{
     background-color: $titleGrey;
     color: white;
+  }
+}
+
+.social-links{
+  margin: 30px auto;
+  background-color: $backgroundGrey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  a svg{
+    margin-right: 10px;
   }
 }
