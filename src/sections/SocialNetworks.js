@@ -25,7 +25,7 @@ function SocialNetworks(){
             <Container>
                 <Grid container spacing={1}>
                     {socials.map(s =>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={4}>
                             <Button
                                 color={'primary'}
                                 fullWidth={true}

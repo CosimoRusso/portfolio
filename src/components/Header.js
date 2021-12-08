@@ -23,13 +23,13 @@ function Header(){
                             Download my CV
                         </Button>
                     </Grid>
-                    <Grid item xs={12} style={{marginTop: '20px'}}>
-                        <p style={{margin: 0}}>Scroll for more</p>
-                        <KeyboardArrowDownIcon  color={'primary'} />
-                    </Grid>
                 </Grid>
-
+                <div className={'scroll-down'}>
+                    <p style={{margin: 0}}>Scroll for more</p>
+                    <KeyboardArrowDownIcon  color={'primary'} />
+                </div>
             </div>
+
         </header>
     )
 }
