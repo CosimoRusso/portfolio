@@ -1,7 +1,7 @@
 import {Button, Divider, Grid} from "@mui/material";
 
 function ProjectBox(props){
-    const {image, name, url, text, left} = props;
+    const {image, name, url, text} = props;
     return (
         <div className={'project-box'}>
             <Grid container spacing={3}>
