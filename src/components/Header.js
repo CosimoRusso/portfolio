@@ -1,5 +1,6 @@
 import Presentation from "./Presentation";
 import {Button, Grid} from "@mui/material";
+import SocialLinks from "./SocialLinks";
 
 function Header(){
     return (
@@ -21,6 +22,12 @@ function Header(){
                         >
                             Download my CV
                         </Button>
+                    </Grid>
+                </Grid>
+
+                <Grid container justifyContent={'center'}>
+                    <Grid item xs={10} sm={6}>
+                        <SocialLinks />
                     </Grid>
                 </Grid>
             </div>
