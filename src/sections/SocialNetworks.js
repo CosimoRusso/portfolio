@@ -27,7 +27,6 @@ function SocialNetworks(){
                     {socials.map(s =>
                         <Grid item xs={12} md={4}>
                             <Button
-                                color={'primary'}
                                 fullWidth={true}
                                 variant={'outlined'}
                                 href={s.link}

@@ -4,6 +4,8 @@ import Projects from "./components/Projects";
 
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import SocialNetworks from "./sections/SocialNetworks";
+import Studies from "./sections/Studies";
+import ColorWrapper from "./components/ColorWrapper";
 
 const theme = createTheme({
     status: {
@@ -26,8 +28,16 @@ function App() {
         <div className="App">
             <ThemeProvider theme={theme}>
                 <Header />
-                <Projects />
-                <SocialNetworks />
+                <ColorWrapper colorScheme={'light'}>
+                    <Studies/>
+                </ColorWrapper>
+                <ColorWrapper colorScheme={'dark'}>
+                    <Projects  />
+                </ColorWrapper>
+                <ColorWrapper colorScheme={'light'}>
+                    <SocialNetworks />
+                </ColorWrapper>
+
             </ThemeProvider>
 
         </div>
